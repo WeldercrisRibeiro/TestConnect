@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:15
+    container_name: vmdinfarma
+    restart: always
+    environment:
+      POSTGRES_USER: vmdapp
+      POSTGRES_PASSWORD: "vmd22041748"
+      POSTGRES_DB: vmd
+    ports:
+      - "5434:5432"
