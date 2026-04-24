@@ -1,0 +1,27 @@
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "welder2@chatbotmaker.io",
+  "name": "Welder Ribeiro",
+  "password": "@Cris2507"
+}
+
+###
+GET http://localhost:3000/users/1
+
+###
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "name": "Welder",
+  "password": "@Cris2507",
+  "email": "welder@suri.ai"
+}
+
+###
+DELETE http://localhost:3000/users/1
